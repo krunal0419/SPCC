@@ -1,0 +1,1 @@
+  fseek(ptr4,0,SEEK_CUR);

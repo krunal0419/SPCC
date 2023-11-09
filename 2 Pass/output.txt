@@ -1,0 +1,15 @@
+PASS-1 of the Two Pass Assembler
+=============================================================
+||ASSEMBLY PROGRAM     |LC 	|INTERMEDIATE CODE	
+=============================================================
+*	START	501		(AD , 01)(c , 501)		
+A	DS	1	501	(S , 0)(DL , 00)(c , 1)		
+B	DS	1	502	(S , 1)(DL , 00)(c , 1)		
+C	DS	1	503	(S , 2)(DL , 00)(c , 1)		
+*	READ	A	504	(IS , 09)(S , 0)		
+*	READ	B	505	(IS , 09)(S , 1)		
+MOVER	AREG	A	506	(IS , 04)(RG , 01)(S , 0)	
+ADD	AREG	B	507	(IS , 01)(RG , 01)(S , 1)	
+MOVEM	AREG	C	508	(IS , 05)(RG , 01)(S , 2)	
+*	PRINT	C	509	(IS , 10)(S , 2)		
+*	END	*	510	(AD , 02)			
